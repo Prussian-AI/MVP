@@ -64,7 +64,7 @@
             href="#page-top"
             style="padding: 0px"
           >
-            <span style="color:white;font-family:sans-serif">
+            <span style="color: white; font-family: sans-serif">
               <img
                 src="img/logos/logo.png"
                 width="50px"
@@ -77,59 +77,138 @@
       </div>
       <!-- /.container-fluid -->
     </nav>
-    <section id="contact" style="height: 100vh;">
+    <section id="contact" style="height: 100vh">
       <div class="container">
-        <br/><br/><br/><br/>
+        <br /><br />
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Sign In to Prussian to do Survey</h2>
+            <h2 class="section-heading">Complete form to sign up</h2>
           </div>
         </div>
-        <br/><br/><br/><br/><br/>
+        <br /><br />
         <div class="row">
           <div class="col-lg-12">
             <form name="sentMessage" id="contactForm" novalidate>
               <div class="row">
-                <div class="col-md-3"></div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Your Name *"
-                      id="name"
-                      required
-                      data-validation-required-message="Please enter your name."
-                    />
-                    <p class="help-block text-danger"></p>
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <h4 class='tx_title'>First name</h4>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Your First Name *"
+                        id="first"
+                        required
+                        data-validation-required-message="Please enter your first name."
+                      />
+                      <p class="help-block text-danger"></p>
+                    </div>
                   </div>
-                  <div class="form-group">
-                    <input
-                      type="email"
-                      class="form-control"
-                      placeholder="Your Email *"
-                      id="email"
-                      required
-                      data-validation-required-message="Please enter your email address."
-                    />
-                    <p class="help-block text-danger"></p>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <h4 class='tx_title'>Last name</h4>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Your Last Name *"
+                        id="last"
+                        required
+                        data-validation-required-message="Please enter your last name."
+                      />
+                      <p class="help-block text-danger"></p>
+                    </div>
                   </div>
-                  <div class="form-group">
-                    <input
-                      type="password"
-                      class="form-control"
-                      placeholder="Password *"
-                      id="password"
-                      required
-                      data-validation-required-message="Please enter your password."
-                    />
-                    <p class="help-block text-danger"></p>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <h4 class='tx_title'>Email</h4>
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="Your Email *"
+                        id="email"
+                        required
+                        data-validation-required-message="Please enter your email address."
+                      />
+                      <p class="help-block text-danger"></p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <h4 class='tx_title'>Phone number</h4>
+                      <input
+                        type="phone2numeric"
+                        class="form-control"
+                        placeholder="Your phone number *"
+                        id="phone"
+                        required
+                        data-validation-required-message="Please enter your phone number."
+                      />
+                      <p class="help-block text-danger"></p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <h4 class='tx_title'>Company</h4>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Your Company *"
+                        id="company"
+                        required
+                        data-validation-required-message="Please enter your company."
+                      />
+                      <p class="help-block text-danger"></p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <h4 class='tx_title'>Company Size</h4>
+                      <input
+                        type="number"
+                        class="form-control"
+                        placeholder="Company size *"
+                        id="size"
+                        required
+                        data-validation-required-message="Please enter your company size."
+                      />
+                      <p class="help-block text-danger"></p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <h4 class='tx_title'>Password</h4>
+                      <input
+                        type="password"
+                        class="form-control"
+                        placeholder="Your password *"
+                        id="pwd"
+                        required
+                        data-validation-required-message="Please enter your password."
+                      />
+                      <p class="help-block text-danger"></p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <h4 class='tx_title'>Confirm Password</h4>
+                      <input
+                        type="password"
+                        class="form-control"
+                        placeholder="Confirm password *"
+                        id="confirmpwd"
+                        required
+                        data-validation-required-message="Please confirm your password."
+                      />
+                      <p class="help-block text-danger"></p>
+                    </div>
                   </div>
                 </div>
                 <div class="clearfix"></div>
                 <div class="col-lg-12 text-center">
                   <div id="success"></div>
-                  <button type="submit" class="btn btn-xl">Sign In</button>
+                  <button type="submit" class="btn btn-xl">Sign Up</button>
                 </div>
               </div>
             </form>

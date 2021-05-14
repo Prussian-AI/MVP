@@ -9,17 +9,29 @@ $(function () {
     submitSuccess: function ($form, event) {
       event.preventDefault(); // prevent default submit behaviour
       // get values from FORM
-      var name = $("input#name").val();
+      var first = $("input#first").val();
+      var last = $("input#last").val();
       var email = $("input#email").val();
-      var phone = $("input#password").val();
-      var message = $("textarea#message").val();
-      var firstName = name; // For Success/Failure Message
+      var phone = $("input#phone").val();
+      var company = $("input#company").val();
+      var size = $("input#size").val();
+      var pwd = $("input#pwd").val();
+      var confirmpwd = $("input#confirmpwd").val();
+      var firstName = first; // For Success/Failure Message
       // Check for white space in name for Success/Fail message
-      if (firstName.indexOf(" ") >= 0) {
-        firstName = name.split(" ").slice(0, -1).join(" ");
+      console.log(first,
+        last,
+        email,
+        phone,
+        company,
+        size,
+        pwd,
+        confirmpwd);
+      if(pwd != confirmpwd){
+        alert("Plase confirm password");
+      }else{
+        window.open("https://google.com", "_self");
       }
-      console.log(name, email, phone);
-      window.open("https://google.com", "_self");
       // $.ajax({
       //     url: "././mail/contact_me.php",
       //     type: "POST",
